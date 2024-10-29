@@ -1,0 +1,32 @@
+public class Milkshake extends Dessert {
+  
+private boolean hasWhippedCream;
+
+public Milkshake() {
+  hasWhippedCream = true;
+}
+
+public Milkshake(String flavor, double price, String size, boolean hasWhippedCream) {
+    super(flavor, price, size);
+    this.hasWhippedCream = hasWhippedCream;
+}
+   public void setFlavor(String newFlavor) {
+    flavor = newFlavor;
+  }
+
+  public void setPrice(double newPrice) {
+    price = newPrice;
+  }
+
+  public void setSize(String newSize) {
+    size = newSize;
+  }
+  
+  public void setHasWhippedCream(boolean newHasWhippedCream) {
+    hasWhippedCream = newHasWhippedCream;
+  }
+
+  public String toString() {
+    return super.toString() + "\n" + "Flavor: " + "" + flavor + "" + "\n" + "Price: " + "" + price + "" + "\n" + "Size: " + "" + size + "" + "\n" + "Is there Whipped Cream? " + "" + hasWhippedCream + "";
+}
+}
