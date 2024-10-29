@@ -1,0 +1,110 @@
+import java.util.Scanner;
+
+public class StoreRunner {
+  public static void main(String[] args) {
+
+   System.out.println("Welcome to the Ice Cream Shop");
+   System.out.println("\n");
+
+
+Scanner order = new Scanner(System.in);
+    System.out.println("Are you ready to order?");
+    String b = order.next();
+
+    if (b.equals("yes")) {
+    
+    Scanner question = new Scanner(System.in);
+    System.out.println("Would you like an IceCream, Milkshake, or Flurry?");
+    String a = question.next();
+
+
+if (a.equals("IceCream"))
+{        
+    Scanner flavor = new Scanner(System.in);
+    System.out.println("What flavor would you like?");
+    String newFlavor = flavor.nextLine();
+
+    Scanner price = new Scanner(System.in);
+    System.out.println("What price do you plan on paying?");
+    Double newPrice = flavor.nextDouble();
+
+    Scanner size = new Scanner(System.in);
+    System.out.println("What size would you like?");
+    String newSize = size.nextLine();
+
+     Scanner inCone = new Scanner(System.in);
+    System.out.println("Would you like a cone?");
+    boolean newInCone = inCone.nextBoolean();
+
+    Scanner hasSprinkles = new Scanner(System.in);
+    System.out.println("Would you like sprinkles?");
+    boolean newHasSprinkles = hasSprinkles.nextBoolean();
+
+     System.out.println("\n");
+
+    IceCream yourIceCream = new IceCream(newFlavor, newPrice, newSize, newInCone, newHasSprinkles);
+   System.out.println(yourIceCream);
+}
+    if (a.equals("Milkshake"))
+{
+ Scanner flavor = new Scanner(System.in);
+    System.out.println("What flavor would you like?");
+    String newFlavor = flavor.nextLine();
+
+    Scanner price = new Scanner(System.in);
+    System.out.println("What price do you plan on paying?");
+    Double newPrice = flavor.nextDouble();
+
+    Scanner size = new Scanner(System.in);
+    System.out.println("What size would you like?");
+    String newSize = size.nextLine();
+
+   Scanner hasWhippedCream = new Scanner(System.in);
+    System.out.println("Would you like whipped cream?");
+    boolean newHasWhippedCream = hasWhippedCream.nextBoolean();
+
+  System.out.println("\n");
+
+   Milkshake yourMilkshake = new Milkshake(newFlavor, newPrice, newSize, newHasWhippedCream);
+   System.out.println(yourMilkshake);
+}
+    
+if (a.equals("Flurry"))
+{
+  
+            
+    Scanner flavor = new Scanner(System.in);
+    System.out.println("What flavor would you like?");
+    String newFlavor = flavor.nextLine();
+
+    Scanner price = new Scanner(System.in);
+    System.out.println("What price do you plan on paying?");
+    Double newPrice = flavor.nextDouble();
+
+    Scanner size = new Scanner(System.in);
+    System.out.println("What size would you like?");
+    String newSize = size.nextLine();
+
+  Scanner sauce = new Scanner(System.in);
+    System.out.println("What sauce would you like?");
+    String newSauce = sauce.nextLine();
+
+  Scanner addTopping = new Scanner(System.in);
+    System.out.println("What toppings would you like?");
+    String newAddTopping = addTopping.nextLine();
+
+  System.out.println("\n");
+
+  Flurry yourFlurry = new Flurry(newFlavor, newPrice, newSize, newSauce, newAddTopping);
+   System.out.println(yourFlurry);
+}
+    }
+    
+   
+
+     System.out.println("\n");
+     System.out.println("Enjoy your Ice Cream!!!");
+    
+    
+  }
+}
