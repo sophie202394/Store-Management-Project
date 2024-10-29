@@ -1,0 +1,19 @@
+public class Dessert {
+
+  public String flavor;    
+  public double price;    
+  public String size;
+  
+  public Dessert() {
+    this("plain", 0.50, "small");
+  }
+
+  
+  public Dessert(String flavor, double price, String size) {
+    this.flavor = flavor;
+    this.price = price;
+    this.size = size;
+  }
+
+
+}
