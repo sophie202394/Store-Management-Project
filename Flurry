@@ -1,0 +1,41 @@
+public class Flurry extends Dessert {
+
+  private String sauce;
+  private String addTopping;
+
+
+  public Flurry() {
+    sauce = "hot fudge";
+    addTopping = "oreo";
+  }
+  public Flurry(String flavor, double price, String size, String sauce, String addTopping) {
+    super(flavor, price, size);
+    this.sauce = sauce;
+    this.addTopping = addTopping;
+  }
+
+public void setFlavor(String newFlavor) {
+    flavor = newFlavor;
+  }
+
+  public void setPrice(double newPrice) {
+    price = newPrice;
+  }
+
+  public void setSize(String newSize) {
+    size = newSize;
+  }
+
+   public void setSauce(String newSauce) {
+    sauce = newSauce;
+  }
+
+   public void setAddTopping(String newAddTopping) {
+    addTopping = newAddTopping;
+  }
+
+public String toString() {
+    return super.toString() + "\n" + "Flavor: " + "" + flavor + "" + "\n" + "Price: " + "" + price + "" + "\n" + "Size: " + "" + size + "" + "\n" + "Sauce: " + "" + sauce + "" + "\n" + "Additional Toppings: " + "" + addTopping + "";
+}
+  
+}
