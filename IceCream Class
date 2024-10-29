@@ -1,0 +1,45 @@
+public class IceCream extends Dessert {
+ 
+  private boolean inCone;
+  private boolean hasSprinkles;
+
+
+  public IceCream() {
+    inCone = true;
+    hasSprinkles = true;
+  }
+
+
+  public IceCream(String flavor, double price, String size, boolean inCone, boolean hasSprinkles) {
+    super(flavor, price, size);
+    this.inCone = inCone;
+    this.hasSprinkles = hasSprinkles;
+  }
+
+ 
+  
+   public void setFlavor(String newFlavor) {
+    flavor = newFlavor;
+  }
+
+  public void setPrice(double newPrice) {
+    price = newPrice;
+  }
+
+  public void setSize(String newSize) {
+    size = newSize;
+  }
+  
+  public void setInCone(boolean newInCone) {
+    inCone = newInCone;
+  }
+  
+public void setHasSprinkles(boolean newHasSprinkles) {
+    hasSprinkles = newHasSprinkles;
+  }
+  
+   public String toString() {
+    return super.toString() + "\n" + "Flavor: " + "" + flavor + "" + "\n" + "Price: " + "" + price + "" + "\n" + "Size: " + "" + size + "" + "\n" + "Is the Ice Cream in a cone? " + "" + inCone + "" + "\n" + "Are there Sprinkles? " + "" + hasSprinkles + "";
+  }
+
+}
